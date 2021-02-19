@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     arrow_full.innerHTML = `The Sum is :  ${arrowFun1(1,2)}`;
     arrow_red1.innerHTML = `The Sum is :  ${arrowFun2(1,2)}`;
     arrow_red2.innerHTML = `The Sqrt is :  ${arrowFun3(4)}`;
-    es5_result.innerHTML = "mekuanint"
-
-
 
 })
 
@@ -24,3 +21,26 @@ const arrowFun2 = (x,y)=> x + y;
 //4. A minimized arrow function [No return statement , no curly brace, no square bracket]
 //5. The function will return the sqrt , use Math.sqrt(var);
 const arrowFun3 = x => Math.sqrt(x);
+
+//es5
+
+let box= {
+    color: 'red',
+    showMe: function(){
+      var self = this
+      es5_result.innerHTML = self.color
+}
+}
+box.showMe()
+
+//es6
+let Box= {
+    color: 'red',
+    showMe: ()=>{
+      var self = this
+      es6_result.innerHTML = self.color
+}
+}
+Box.showMe()
+
+
