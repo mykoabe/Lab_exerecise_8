@@ -18,10 +18,10 @@ function templateStringConcatenation() {
     const fullIntro = "My Name is " + student.name + " and i am " + student.age + " Years Old"
 
     //1. Create a variable called fullIntroTemplate and Store the same string displayed above with template literal
-
-
+    
+    const fullIntroTemplate = `My name is ${student.name} and i am ${student.age} years old`
     //3. Display it [change it to fullIntroTemplate]
-    templateConcatenationResult.innerHTML = fullIntro;
+    templateConcatenationResult.innerHTML = fullIntroTemplate;
 
 }
 
@@ -33,9 +33,9 @@ function displayTemplateExpression() {
 
     //1. Create a variable called result1 and Store the same string displayed above with template literal
 
-
+    const result1 = `The Sum of the Numbers is  : ${sum(1, 2)}`
     //3. Display it [change it to result1]
-    templateExpression.innerHTML = result;
+    templateExpression.innerHTML = result1;
 
 
 
